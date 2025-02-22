@@ -1,0 +1,1 @@
+export const MNEMONIC = "act action actor actress actual adapt add addict address adjust admit adult advance"

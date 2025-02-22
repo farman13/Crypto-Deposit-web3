@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@layer utilities {
+
+    /* Define custom colors */
+    .bg-custom-gray {
+        background-color: #181a20;
+    }
+
+    .text-custom-pink {
+        color: #FF1493;
+    }
+}
