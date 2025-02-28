@@ -51,8 +51,6 @@ Ensure to configure the necessary environment variables in the `.env` file befor
 ## Contributing
 Feel free to open issues or submit pull requests to improve the project.
 
-## License
-This project is open-source and available under the MIT License.
 
 ---
 🚀 **Happy Depositing!** 🔥
