@@ -2,6 +2,9 @@
 
 A seamless crypto deposit system designed for staking, trading, and more. This platform enables users to deposit cryptocurrencies effortlessly while ensuring real-time tracking and instant balance updates.
 
+![crypto Screenshot](./crypto1.png)
+![crypto Screenshot](./crypto2.png)
+
 ## Features
 - **Wallet Creation:** Each user gets a unique wallet at signup.
 - **Easy Deposits:** Users select a coin & network to receive a deposit address.
