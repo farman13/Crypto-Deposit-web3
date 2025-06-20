@@ -7,7 +7,6 @@ import Signup from './pages/Signup'
 import DepositCrypto from './pages/DepositCrypto'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
