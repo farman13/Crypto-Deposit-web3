@@ -97,7 +97,7 @@ function getETHTransfersFromBlock() {
 }
 getETHTransfersFromBlock();
 const main = () => __awaiter(void 0, void 0, void 0, function* () {
-    yield mongoose_1.default.connect("mongodb+srv://farman32740:f%40rman32740@cluster0.wvi5a.mongodb.net/ETH-Indexer");
+    yield mongoose_1.default.connect("mongodb+srv://farman32740:f%40rman4093274@cluster0.yd9ksor.mongodb.net//ETH-Indexer");
     console.log("db connected");
     // setInterval(() => getETHTransfersFromBlock(), 5000);
     //  setInterval(() => getApeTransferFromBlock(), 1000);

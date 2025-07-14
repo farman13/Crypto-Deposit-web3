@@ -55,8 +55,8 @@ function getETHTransfersFromBlock() {
         const block = yield EthProvider.getBlock(latestBlock);
         //console.log("Transactions", block?.transactions, block?.length);
         const fullTransactions = yield Promise.all(
-        //@ts-ignore
-        block.transactions.map(txHash => EthProvider.getTransaction(txHash)));
+            //@ts-ignore
+            block.transactions.map(txHash => EthProvider.getTransaction(txHash)));
         //  console.log("Full:", fullTransactions);
         const interested = yield fetchUsersDepositAddresses();
         //  console.log("Inside", interested);
@@ -82,8 +82,8 @@ const getApeTransferFromBlock = () => __awaiter(void 0, void 0, void 0, function
     const block = yield ApeProvider.getBlock(latestBlock);
     // console.log("Ape Block txn", block?.transactions, block?.length);
     const fullTransaction = yield Promise.all(
-    //@ts-ignore
-    (_a = block === null || block === void 0 ? void 0 : block.transactions) === null || _a === void 0 ? void 0 : _a.map(txHash => ApeProvider.getTransaction(txHash)));
+        //@ts-ignore
+        (_a = block === null || block === void 0 ? void 0 : block.transactions) === null || _a === void 0 ? void 0 : _a.map(txHash => ApeProvider.getTransaction(txHash)));
     // console.log(fullTransaction);
     const interestedAddresses = yield fetchUsersDepositAddresses();
     for (const txn of fullTransaction) {
@@ -101,7 +101,7 @@ const getApeTransferFromBlock = () => __awaiter(void 0, void 0, void 0, function
     yield updatelastProcessedBlock("curtis", latestBlock);
 });
 const main = () => __awaiter(void 0, void 0, void 0, function* () {
-    yield mongoose_1.default.connect("mongodb+srv://farman32740:f%40rman32740@cluster0.wvi5a.mongodb.net/ETH-Indexer");
+    yield mongoose_1.default.connect("mongodb+srv://farman32740:f%40rman4093274@cluster0.yd9ksor.mongodb.net//ETH-Indexer");
     console.log("db connected");
     setInterval(() => getETHTransfersFromBlock(), 5000);
     setInterval(() => getApeTransferFromBlock(), 1000);
