@@ -1,3 +1,5 @@
+import dotenv from 'dotenv'
+dotenv.config();
 import express from 'express';
 import { HDNodeWallet, Wallet } from 'ethers';
 import { mnemonicToSeedSync } from 'bip39';
@@ -70,7 +72,7 @@ app.get("/depositAddress/:userId", async (req, res) => {
 
 
 const main = async () => {
-    await mongoose.connect("mongodb+srv://farman32740:f%40rman32740@cluster0.wvi5a.mongodb.net/ETH-Indexer");
+    await mongoose.connect(process.env.MONGODB_URL || "");
     console.log("Db connected")
     app.listen(3000);
 }
